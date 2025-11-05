@@ -1,35 +1,16 @@
-# notes-app
-A simple notes management app built with React to practice state management, component communication, and modular architecture.  Users can create, view, and delete notes with categorized priorities (High, Medium, Low). The app demonstrates the use of props, state, conditional rendering, and component decomposition in React.
+# React + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Features
+Currently, two official plugins are available:
 
-📝 Add new notes with title, category, priority, and description.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-🗂️ Display all notes dynamically using reusable components.
+## React Compiler
 
-🧹 Delete notes with confirmation prompt.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-🎨 Priority-based border color (High → red, Medium → orange, Low → green).
+## Expanding the ESLint configuration
 
-🧩 Components separated for clarity and scalability:
-
-App → main state holder
-
-NoteForm → input form
-
-NoteList → renders a list of notes
-
-Note → single note card
-
-SelectInput & TextAreaInput → reusable form elements
-
-Tech Stack
-
-React.js
-
-JavaScript (ES6+)
-
-Tailwind CSS for styling
-
-Vite
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
